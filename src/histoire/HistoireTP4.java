@@ -13,7 +13,6 @@ public class HistoireTP4 {
 		michel.boire();
 		michel.acheter("missile inter continental", 100);
 		
-		
 	}
 	
 }
