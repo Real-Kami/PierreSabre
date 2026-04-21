@@ -18,4 +18,22 @@ public class Yakuza extends Humain {
 		this.setArgent(this.getArgent() + buffer);
 	}
 	
+	public int perdre() {
+		int buffer = this.getArgent();
+		this.setArgent(0);
+		this.reputation -= 1;
+		this.parler("Oh non, j'ai perdu le combat et tout mon argent...");
+		return buffer;
+	}
+	
+	public void gagner(int gain) {
+		this.setArgent(this.getArgent() + gain);
+		this.reputation += 1;
+		this.parler("Haha, j'ai gagné le combat !");
+	}
+	
+	public int getReputation() {
+		return reputation;
+	}
+	
 }
