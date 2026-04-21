@@ -16,6 +16,10 @@ public class Humain {
 		return argent;
 	}
 	
+	public void setArgent(int somme) {
+		this.argent = somme;
+	}
+	
 	public String getBoisson_favorite() {
 		return boisson_favorite;
 	}
